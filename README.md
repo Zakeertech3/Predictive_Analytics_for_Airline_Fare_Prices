@@ -1,29 +1,52 @@
 # Predictive_Analytics_for_Airline_Fare_Prices
 
-Project Objective:
+Overview:
 
-This project aims to develop a predictive model to forecast airline fare prices using historical pricing data. By applying advanced analytics and machine learning techniques, the model seeks to provide insights into pricing trends, enabling consumers and businesses to make informed decisions.
+This project focuses on predicting the flight fares using various machine learning techniques. The dataset consists of flight information such as airlines, date of journey, source, destination, route, departure and arrival times, duration, total stops, and additional info, along with the price, which is our target variable. Through exploratory data analysis (EDA), feature engineering, feature selection, and model building, we aim to build a model that can accurately predict flight prices based on the given features.
 
-Data Description:
+Dataset:
 
-The dataset includes historical airline fare data, featuring attributes such as flight dates, departure and arrival times, airline companies, flight durations, and various classes of fares. This comprehensive dataset serves as the foundation for our predictive modeling efforts.
+The dataset used in this project includes information about flights in India, including airlines, date of journey, source, destination, route, departure time, arrival time, duration, total stops, additional information, and flight prices.
+
+Features:
+
+The dataset contains the following features:
+
+Airline: The airline operating the flight.
+Date_of_Journey: The date of the flight.
+Source: The starting point of the flight.
+Destination: The endpoint of the flight.
+Route: The route taken by the flight.
+Dep_Time: Departure time of the flight.
+Arrival_Time: Arrival time of the flight.
+Duration: Total duration of the flight.
+Total_Stops: Total stops between the source and destination.
+Additional_Info: Additional information about the flight.
+Price: The price of the flight ticket.
 
 Methodology:
 
-Data Preprocessing
-Data Cleaning: Identifying and handling missing or inconsistent data entries.
-Feature Engineering: Extracting and selecting relevant features that influence fare prices, such as time of day, day of the week, and holiday periods.
+Data Preprocessing: Handling missing values, converting data types, and preprocessing date and time features.
+Exploratory Data Analysis (EDA): Analyzing the dataset to understand the distribution of various features and their relationship with the flight prices.
+Feature Engineering: Creating new features like journey day, month, and derived attributes from the departure and arrival times to help improve model performance.
+Feature Selection: Using techniques like mutual information regression to select features that have the most impact on the flight price.
+Model Building: Building and training models like RandomForestRegressor and DecisionTreeRegressor. Also, hyperparameter tuning using RandomizedSearchCV to improve model performance.
+Evaluation: Evaluating model performance using metrics like R^2 score, MAE, MSE, RMSE, and MAPE.
+Deployment: Saving the model using pickle for future predictions on new data.
 
-Model Development:
+Tools and Libraries Used:
 
-Utilizing machine learning algorithms (e.g., linear regression, random forest, XGBoost) to develop a predictive model. The choice of algorithm is based on preliminary analysis and model performance metrics.
+Data Manipulation and Analysis: Pandas, NumPy
+Data Visualization: Matplotlib, Seaborn
+Machine Learning: Scikit-learn
+Model Persistence: Pickle
 
-Evaluation:
+Results:
 
-The model is evaluated using standard metrics such as RMSE (Root Mean Square Error) and MAE (Mean Absolute Error) to assess its accuracy and reliability in predicting fare prices.
+The RandomForestRegressor model with hyperparameter tuning showed promising results in predicting flight fares with a good R^2 score.
 
-Key Findings and Insights:
+Future Work:
 
-Summary of the model's performance and its implications for predicting airline fare prices.
-Identification of key factors that have a significant impact on fare prices.
-Recommendations for consumers and businesses on how to leverage these insights for strategic planning and decision-making.
+Experimenting with more advanced machine learning models and ensemble techniques.
+Incorporating more features that may affect flight prices, such as weather conditions, festival times, etc.
+Deploying the model as a web application to make flight fare predictions accessible to users.
