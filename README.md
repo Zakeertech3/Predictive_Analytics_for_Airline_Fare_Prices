@@ -13,15 +13,25 @@ Features:
 The dataset contains the following features:
 
 Airline: The airline operating the flight.
+
 Date_of_Journey: The date of the flight.
+
 Source: The starting point of the flight.
+
 Destination: The endpoint of the flight.
+
 Route: The route taken by the flight.
+
 Dep_Time: Departure time of the flight.
+
 Arrival_Time: Arrival time of the flight.
+
 Duration: Total duration of the flight.
+
 Total_Stops: Total stops between the source and destination.
+
 Additional_Info: Additional information about the flight.
+
 Price: The price of the flight ticket.
 
 Methodology:
